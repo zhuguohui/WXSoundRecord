@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/layout_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5">
+
+        <com.example.wxsoundrecord.voice.RecordButton
+            android:id="@+id/btnAudio"
+            android:paddingStart="140dp"
+            android:paddingEnd="140dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/dyps_shape_txt_bg"
+            android:drawableStart="@drawable/dypc_ic_voice_press"
+            android:gravity="center"
+            android:text="按住说话"
+            android:textSize="13dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>
